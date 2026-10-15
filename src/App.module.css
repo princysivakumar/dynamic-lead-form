@@ -1,0 +1,61 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at top left, rgba(99, 102, 241, 0.24), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.2), transparent 26%),
+    linear-gradient(135deg, #edf4ff 0%, #f8fbff 52%, #eef7ff 100%);
+}
+
+.shell {
+  width: min(100%, 980px);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1.75rem;
+  box-shadow: 0 30px 80px rgba(37, 99, 235, 0.12);
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  background: linear-gradient(135deg, #1f3b8f 0%, #2563eb 42%, #3b82f6 100%);
+  color: #fff;
+  padding: 2.25rem 2.5rem 2rem;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  inset: auto -3rem -5rem auto;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.header h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 0.7rem;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.header p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: 38rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.04rem;
+}
+
+.content {
+  padding: 2rem 2.25rem 2.5rem;
+}
